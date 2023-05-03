@@ -5,10 +5,10 @@ const uri = "mongodb+srv://admin:passwordadmin@tugas-eduwork.whlvwc1.mongodb.net
 (async () => {
     try {
         await mongoose.connect(uri);
-        console.log("Connecting to database: Success");
+        console.log("Connection to database: Success (Mongoose)");
     }
     catch(error) {
-        console.log("Connecting to database: Failed --> ");
+        console.log("Connection to database: Failed (Mongoose)--> ");
     }
 })();
 

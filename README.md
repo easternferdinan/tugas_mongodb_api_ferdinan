@@ -1,36 +1,49 @@
 # API Tugas MongoDB (Week 10)
 
-Created with Node.JS v14.21.3
+<br>
+
+This REST-API was created with Node.JS v14.21.3
+
 Hosted at [Cyclic.sh](https://app.cyclic.sh/)
 
-### How to run
+<br>
+
+This API have two available version:
+- v1 : uses MongoDB driver
+- v2 : uses Mongoose ODM
+
+<br>
+
+## How to run
 
     npm run start
 
-### Usage
+## Usage
+
 
  - GET all data
-> send GET request to 'api/'
+> send GET request to 'api/*version*/'
 
 <br>
 
 - Add a product
-> send POST request to 'api/add-product/'
+> send POST request to 'api/*version*/add-product/'
 
 
 <br>
 
  - Edit a document
->  send PUT request to 'api/update-product/
+>  send PUT request to 'api/*version*/update-product/
 
 <br>
 
 - Delete a document
-> send DELETE request to 'api/delete-product/:id'
+> send DELETE request to 'api/*version*/delete-product/*:id*'
 
 *replace the ':id' with product's id*
 
+<br>
+
+Replace 'version' with 'v1' or 'v2' accordingly.
+
 Send requests to : https://eager-pear-handbag.cyclic.app/
-
-
-
